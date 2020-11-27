@@ -53,6 +53,7 @@ BOARD_KERNEL_PAGESIZE := 2048
 TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_SOURCE := kernel/asus/msm8916
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci lpm_levels.sleep_disabled=1 androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE += console=tty0
 
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"

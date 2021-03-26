@@ -893,3 +893,9 @@ on property:sys.boot_completed=1
 
 on load_system_props_action
     start qcom-opengles
+
+service init_wlan /system/bin/sh /system/etc/init_wlan.sh
+    class main
+    user root
+    group root
+    oneshot

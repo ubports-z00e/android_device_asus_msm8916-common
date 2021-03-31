@@ -1,1 +1,0 @@
-allow rild proc_asusevtlog:file rw_file_perms;

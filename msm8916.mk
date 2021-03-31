@@ -267,5 +267,13 @@ PRODUCT_PACKAGES += init_wlan.sh
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ubuntu/70-android.rules:system/halium/lib/udev/rules.d/70-android.rules \
     $(LOCAL_PATH)/ubuntu/android.conf:system/halium/etc/ubuntu-touch-session.d/android.conf \
-    $(LOCAL_PATH)/ubuntu/touch.pa:system/halium/etc/pulse/touch.pa
+    $(LOCAL_PATH)/ubuntu/touch.pa:system/halium/etc/pulse/touch.pa \
+    $(LOCAL_PATH)/ubuntu/device-hacks.conf:system/halium/etc/init/device-hacks.conf
+
+PRODUCT_PACKAGES += \
+    libmedia_compat_layer \
+    minimediaservice \
+    libaudioflingerglue \
+    libminisf \
+    miniafservice
 ### End Ubuntu Touch ###
